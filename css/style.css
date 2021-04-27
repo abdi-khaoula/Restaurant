@@ -1,0 +1,174 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+:root{
+    --maincolor:#03a9f4;
+    --mainpadding-left: 100px;
+    --mainpadding-right: 100px;
+}
+/* Start Navbar */
+.parent{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: var(--mainpadding-left);
+    margin-right: var(--mainpadding-right);
+}
+.logo img{
+    width: 80px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-left: 15px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+/* End Navbar */
+/* Start Content */
+.content{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px var(--mainpadding-right);
+}
+h1 span{
+    color: var(--maincolor, red);
+}
+.content p{
+    text-align: center;
+}
+/* End Content */
+/* Start Services */
+.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 60px var(--mainpadding-right);
+    column-gap: 50px;
+    align-items: center;
+    text-align: center;
+}
+/* End Services */
+/* Start About Us */
+.about{
+    display: flex;
+    background-color: #eee;
+    padding: 60px var(--mainpadding-right);
+    column-gap: 50px;
+    align-items: flex-end;
+}
+/* End About Us */
+/* Start Statics */
+.statics{
+    display: flex;
+    padding: 60px var(--mainpadding-right);
+    color: white;
+    justify-content: space-between;
+    text-align: center;
+    height: 120px;
+    line-height: .1;
+}
+.branches{
+    background-color: #b33939;   
+    width: 32%;
+}
+.branches img{
+    width: 55px;
+    padding-top: 18px;
+}
+.chefs{
+    background-color: #227093;
+    width: 32%;
+}
+.chefs img{
+    width: 55px;
+    padding-top: 18px;
+}
+.distributor{
+    background-color: #218c74;
+    width: 32%;
+}
+.distributor img{
+    width: 90px;
+    padding-top: 18px;
+}
+.statics h3{
+    font-size: 35px;
+}
+/* End Statics */
+/* Start Skills */
+.skills{
+    background-color: #eee;
+    padding: 60px var(--mainpadding-right);
+}
+.skills h2{
+    text-align: center;
+}
+.skil{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-end;
+}
+.skil div{
+    width: 1000px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+}
+.skil div::before{
+    position: absolute;
+    color: white;
+    height: 100%;
+    background-color: var(--maincolor, red);
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.skil div::after{
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
+    text-align: right;
+    right: 1020px;
+}
+.east::after{
+    content: "East";
+}
+.east::before{
+    content: "60%";
+    width: 60%;
+}
+.middle::after{
+    content: "Middle";
+}
+.middle::before{
+    content: "70%";
+    width: 70%;
+}
+.west::after{
+    content: "West";
+}
+.west::before{
+    content: "80%";
+    width: 80%;
+}
+.south::after{
+    content: "South";
+}
+.south::before{
+    content: "65%";
+    width: 65%;
+}
+
+
+/* End Skills */
